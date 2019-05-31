@@ -1,0 +1,17 @@
+#VERSION 1.0
+
+#HEADER
+This is the configuration file for my MATLAB banking program.
+#HEADER
+
+s a0name "USAA_Visa";
+s a0type "Credit";
+d a0num -1;
+s a0bank "USAA FSB";
+m<s> a0files ["USAA_Visa2018fmt.kv1"];
+
+s a1name "NASDAQ";
+s a1type "Investment";
+d a1num -1;
+s a1bank "USAA FSB";
+m<s> a1files ["NASDAQ2015.KV1", "NASDAQ2017.KV1", "NASDAQ2018.KV1", "NASDAQ2019.KV1"];

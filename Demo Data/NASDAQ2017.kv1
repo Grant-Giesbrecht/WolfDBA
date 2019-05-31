@@ -1,0 +1,45 @@
+#VERSION 1.0
+
+#HEADER
+Contains data for year 2017.
+
+* Entries with "SECURITIES PURCHASED" in memo line have balance calculated w/o
+  regard to day's stock price. This information was not available.
+* Entries with '0' in value entry had no purchase occur, but instead list the
+  account value as a way to demonstrate daily stock price.
+#HEADER
+
+m<s> t0dd ["09/30/2017", "ACCOUNT VALUE", ""];
+m<s> t0cats [""];
+m<s> t0idg [""];
+d t0val 0;
+d t0bal 5462.75;
+d t0bas 3839.52;
+
+m<s> t0dd ["12/11/2017", "SECURITIES PURCHASED", ""];
+m<s> t0cats [""];
+m<s> t0idg [""];
+d t0val 14.70;
+d t0bal 5477.46;
+d t0bas 3854.22;
+
+m<s> t0dd ["12/11/2017", "SECURITIES PURCHASED", ""];
+m<s> t0cats [""];
+m<s> t0idg [""];
+d t0val 71.90;
+d t0bal 5549.36;
+d t0bas 3926.12;
+
+m<s> t0dd ["12/27/2017", "SECURITIES PURCHASED", ""];
+m<s> t0cats [""];
+m<s> t0idg [""];
+d t0val 26.93;
+d t0bal 5576.29;
+d t0bas 3953.05;
+
+m<s> t0dd ["12/31/2017", "ACCOUNT VALUE", ""];
+m<s> t0cats [""];
+m<s> t0idg [""];
+d t0val 0;
+d t0bal 5851.59;
+d t0bas 3953.05;

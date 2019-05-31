@@ -1,0 +1,1007 @@
+#VERSION 1.0
+
+#HEADER
+Contains year data for year 2018.
+#HEADER
+
+m<s> t0dd ["08/18/2018", "KROGER FUEL #6812                            ", ""];
+m<s> t0cats ["FUEL"];
+m<s> t0idg [""];
+d t0val -1;
+d t0bal -1;
+d t0bas 0;
+
+m<s> t1dd ["08/18/2018", "KROGER FUEL #6812                            ", ""];
+m<s> t1cats ["FUEL"];
+m<s> t1idg [""];
+d t1val -1;
+d t1bal -2;
+d t1bas 0;
+
+m<s> t2dd ["08/18/2018", "5-226- CARLISLE                              ", ""];
+m<s> t2cats ["FUEL"];
+m<s> t2idg [""];
+d t2val -18.35;
+d t2bal -20.35;
+d t2bas 0;
+
+m<s> t3dd ["08/18/2018", "FOWLER'S GULF                                ", ""];
+m<s> t3cats ["FUEL"];
+m<s> t3idg [""];
+d t3val -23.68;
+d t3bal -44.03;
+d t3bas 0;
+
+m<s> t4dd ["08/18/2018", "AMAZON.COM AMZN.COM/BI                       ", ""];
+m<s> t4cats ["AMAZON"];
+m<s> t4idg [""];
+d t4val -42.34;
+d t4bal -86.37;
+d t4bas 0;
+
+m<s> t5dd ["08/17/2018", "PRINCETON UNIVERSITY S                       ", ""];
+m<s> t5cats [""];
+m<s> t5idg [""];
+d t5val -30;
+d t5bal -116.37;
+d t5bas 0;
+
+m<s> t6dd ["08/13/2018", "PPA PHL AIRPORT          PHILADELPHIA PA     ", ""];
+m<s> t6cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t6idg [""];
+d t6val -33;
+d t6bal -149.37;
+d t6bas 0;
+
+m<s> t7dd ["08/12/2018", "DELTA AIR   0062116312583ATLANTA      GA     ", ""];
+m<s> t7cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t7idg [""];
+d t7val -1.94;
+d t7bal -151.31;
+d t7bas 0;
+
+m<s> t8dd ["08/12/2018", "LYFT   *RIDE SUN 3AM     LYFT.COM     CA     ", ""];
+m<s> t8cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t8idg [""];
+d t8val -19.92;
+d t8bal -171.23;
+d t8bas 0;
+
+m<s> t9dd ["08/12/2018", "LYFT   *RIDE SUN 2AM     LYFT.COM     CA     ", ""];
+m<s> t9cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t9idg [""];
+d t9val -20.66;
+d t9bal -191.89;
+d t9bas 0;
+
+m<s> t10dd ["08/12/2018", "LYFT   *RIDE SAT 12PM    LYFT.COM     CA     ", ""];
+m<s> t10cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t10idg [""];
+d t10val -32.63;
+d t10bal -224.52;
+d t10bas 0;
+
+m<s> t11dd ["08/12/2018", "NJT TRENTON       0314   TRENTON      NJ     ", ""];
+m<s> t11cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t11idg [""];
+d t11val -18.5;
+d t11bal -243.02;
+d t11bas 0;
+
+m<s> t12dd ["08/12/2018", "NJT NY PENN STA   0101   NEW YORK     NY     ", ""];
+m<s> t12cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t12idg [""];
+d t12val -33.5;
+d t12bal -276.52;
+d t12bas 0;
+
+m<s> t13dd ["08/11/2018", "KENNEDY SPACE CENTER     321-452-2121 FL     ", ""];
+m<s> t13cats ["KSC TRIP"];
+m<s> t13idg [""];
+d t13val -33.15;
+d t13bal -309.67;
+d t13bas 0;
+
+m<s> t14dd ["08/11/2018", "LYFT   *RIDE SAT 1AM     LYFT.COM     CA     ", ""];
+m<s> t14cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t14idg [""];
+d t14val -21.34;
+d t14bal -331.01;
+d t14bas 0;
+
+m<s> t15dd ["08/11/2018", "LYFT   *RIDE SAT 11AM    LYFT.COM     CA     ", ""];
+m<s> t15cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t15idg [""];
+d t15val -8.92;
+d t15bal -339.93;
+d t15bas 0;
+
+m<s> t16dd ["08/11/2018", "LYFT   *RIDE SAT 4AM     LYFT.COM     CA     ", ""];
+m<s> t16cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t16idg [""];
+d t16val -20.45;
+d t16bal -360.38;
+d t16bas 0;
+
+m<s> t17dd ["08/10/2018", "LYFT   *RIDE FRI 9PM     LYFT.COM     CA     ", ""];
+m<s> t17cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t17idg [""];
+d t17val -7.67;
+d t17bal -368.05;
+d t17bas 0;
+
+m<s> t18dd ["08/10/2018", "LYFT   *RIDE FRI 8PM     LYFT.COM     CA     ", ""];
+m<s> t18cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t18idg [""];
+d t18val -7.12;
+d t18bal -375.17;
+d t18bas 0;
+
+m<s> t19dd ["08/10/2018", "LYFT   *RIDE FRI 5PM     LYFT.COM     CA     ", ""];
+m<s> t19cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t19idg [""];
+d t19val -53.18;
+d t19bal -428.35;
+d t19bas 0;
+
+m<s> t20dd ["08/09/2018", "DELTA AIR   0062116174419ATLANTA      GA     ", ""];
+m<s> t20cats ["TRANSPORTATION", "KSC TRIP"];
+m<s> t20idg [""];
+d t20val -194.33;
+d t20bal -622.68;
+d t20bas 0;
+
+m<s> t21dd ["08/05/2018", "SHELL OIL 91004217038    CAPE MAY     NJ     ", ""];
+m<s> t21cats ["FUEL"];
+m<s> t21idg [""];
+d t21val -35;
+d t21bal -657.68;
+d t21bas 0;
+
+m<s> t22dd ["08/05/2018", "THE WINE CELLAR AT       CAPE MAY     NJ     ", ""];
+m<s> t22cats [""];
+m<s> t22idg [""];
+d t22val -13.86;
+d t22bal -671.54;
+d t22bas 0;
+
+m<s> t23dd ["07/30/2018", "PUBLIC                   PRINCETON    NJ     ", ""];
+m<s> t23cats [""];
+m<s> t23idg [""];
+d t23val -11.73;
+d t23bal -683.27;
+d t23bas 0;
+
+m<s> t24dd ["07/30/2018", "HOAGIE HAVEN             PRINCETON    NJ     ", ""];
+m<s> t24cats ["RESTAURANTS"];
+m<s> t24idg [""];
+d t24val -19.25;
+d t24bal -702.52;
+d t24bas 0;
+
+m<s> t25dd ["07/29/2018", "AIRBNB                   855-424-7262 CA     ", ""];
+m<s> t25cats ["KSC TRIP"];
+m<s> t25idg [""];
+d t25val 138.88;
+d t25bal -563.64;
+d t25bas 0;
+
+m<s> t26dd ["07/28/2018", "AIRBNB                   855-424-7262 CA     ", ""];
+m<s> t26cats ["KSC TRIP"];
+m<s> t26idg [""];
+d t26val -156.77;
+d t26bal -720.41;
+d t26bas 0;
+
+m<s> t27dd ["07/27/2018", "PUBLIC                   PRINCETON    NJ     ", ""];
+m<s> t27cats [""];
+m<s> t27idg [""];
+d t27val -11.73;
+d t27bal -732.14;
+d t27bas 0;
+
+m<s> t28dd ["07/25/2018", "WargamingNA              Nicosia      CY     ", ""];
+m<s> t28cats [""];
+m<s> t28idg [""];
+d t28val -38.39;
+d t28bal -770.53;
+d t28bas 0;
+
+m<s> t29dd ["07/25/2018", "WEGMANS #93              PRINCETON    NJ     ", ""];
+m<s> t29cats ["GROCERIES"];
+m<s> t29idg [""];
+d t29val -47.84;
+d t29bal -818.37;
+d t29bas 0;
+
+m<s> t30dd ["07/23/2018", "AIRBNB                   855-424-7262 CA     ", ""];
+m<s> t30cats ["KSC TRIP"];
+m<s> t30idg [""];
+d t30val -156.77;
+d t30bal -975.14;
+d t30bas 0;
+
+m<s> t31dd ["07/22/2018", "CVS/PHARMACY #01069      PRINCETON    NJ     ", ""];
+m<s> t31cats [""];
+m<s> t31idg [""];
+d t31val -8.52;
+d t31bal -983.66;
+d t31bas 0;
+
+m<s> t32dd ["07/22/2018", "HALO PUB                 PRINCETON    NJ     ", ""];
+m<s> t32cats ["RESTAURANTS"];
+m<s> t32idg [""];
+d t32val -8.5;
+d t32bal -992.16;
+d t32bas 0;
+
+m<s> t33dd ["07/21/2018", "TACORIA                  PRINCETON    NJ     ", ""];
+m<s> t33cats ["RESTAURANTS"];
+m<s> t33idg [""];
+d t33val -24.49;
+d t33bal -1016.65;
+d t33bas 0;
+
+m<s> t34dd ["07/21/2018", "JOE CANAL'S              LAWRENCEVILLENJ     ", ""];
+m<s> t34cats ["GROCERIES"];
+m<s> t34idg [""];
+d t34val -16.51;
+d t34bal -1033.16;
+d t34bas 0;
+
+m<s> t35dd ["07/21/2018", "WEGMANS #93              PRINCETON    NJ     ", ""];
+m<s> t35cats ["GROCERIES"];
+m<s> t35idg [""];
+d t35val -6.09;
+d t35bal -1039.25;
+d t35bas 0;
+
+m<s> t36dd ["07/21/2018", "COSTCO WHSE #1199        LAWRENCE TOWNNJ     ", ""];
+m<s> t36cats ["GROCERIES"];
+m<s> t36idg [""];
+d t36val -38.2;
+d t36bal -1077.45;
+d t36bas 0;
+
+m<s> t37dd ["07/19/2018", "USAA CREDIT CARD PAYMENT SAN ANTONIO  TX     ", ""];
+m<s> t37cats [""];
+m<s> t37idg [""];
+d t37val 778.42;
+d t37bal -299.03;
+d t37bas 0;
+
+m<s> t38dd ["07/17/2018", "TRADER JOE'S #607  QPS   PRINCETON    NJ     ", ""];
+m<s> t38cats ["GROCERIES"];
+m<s> t38idg [""];
+d t38val -74.52;
+d t38bal -373.55;
+d t38bas 0;
+
+m<s> t39dd ["07/16/2018", "AMAZON MKTPLACE PMTS WWW.WWW.AMAZON.COWA     ", ""];
+m<s> t39cats ["AMAZON"];
+m<s> t39idg [""];
+d t39val -16.45;
+d t39bal -390;
+d t39bas 0;
+
+m<s> t40dd ["07/15/2018", "REALEN CONV CTR PARKING  PHILADELPHIA PA     ", ""];
+m<s> t40cats [""];
+m<s> t40idg [""];
+d t40val -26;
+d t40bal -416;
+d t40bas 0;
+
+m<s> t41dd ["07/15/2018", "TACO BELL 029934         BRISTOL      PA     ", ""];
+m<s> t41cats ["RESTAURANTS"];
+m<s> t41idg [""];
+d t41val -12.47;
+d t41bal -428.47;
+d t41bas 0;
+
+m<s> t42dd ["07/15/2018", "30 BURGERS - PRINCETON   PRINCETON    NJ     ", ""];
+m<s> t42cats ["RESTAURANTS"];
+m<s> t42idg [""];
+d t42val -25.43;
+d t42bal -453.9;
+d t42bas 0;
+
+m<s> t43dd ["07/12/2018", "7-ELEVEN 36995           PRINCETON    NJ     ", ""];
+m<s> t43cats [""];
+m<s> t43idg [""];
+d t43val -2.54;
+d t43bal -456.44;
+d t43bas 0;
+
+m<s> t44dd ["07/11/2018", "WEGMANS #93              PRINCETON    NJ     ", ""];
+m<s> t44cats ["GROCERIES"];
+m<s> t44idg [""];
+d t44val -46.63;
+d t44bal -503.07;
+d t44bas 0;
+
+m<s> t45dd ["07/10/2018", "AMAZON.COM AMZN.COM/BILL AMZN.COM/BILLWA     ", ""];
+m<s> t45cats ["AMAZON"];
+m<s> t45idg [""];
+d t45val -19.42;
+d t45bal -522.49;
+d t45bas 0;
+
+m<s> t46dd ["07/08/2018", "LAWNSIDE CITGO           LAWNSIDE     NJ     ", ""];
+m<s> t46cats ["FUEL"];
+m<s> t46idg [""];
+d t46val -32.74;
+d t46bal -555.23;
+d t46bas 0;
+
+m<s> t47dd ["07/07/2018", "LUKOIL 57328             TRENTON      NJ     ", ""];
+m<s> t47cats ["FUEL"];
+m<s> t47idg [""];
+d t47val -30.38;
+d t47bal -585.61;
+d t47bas 0;
+
+m<s> t48dd ["07/07/2018", "ROTI MEDITERRANEAN GRILL WASHINGTON   DC     ", ""];
+m<s> t48cats ["RESTAURANTS"];
+m<s> t48idg [""];
+d t48val -8.8;
+d t48bal -594.41;
+d t48bas 0;
+
+m<s> t49dd ["07/07/2018", "DT #1919                 FALLS CHURCH DC     ", ""];
+m<s> t49cats [""];
+m<s> t49idg [""];
+d t49val -11.28;
+d t49bal -605.69;
+d t49bas 0;
+
+m<s> t50dd ["07/06/2018", "WEGMANS #93              PRINCETON    NJ     ", ""];
+m<s> t50cats ["GROCERIES"];
+m<s> t50idg [""];
+d t50val -43.39;
+d t50bal -649.08;
+d t50bas 0;
+
+m<s> t51dd ["07/04/2018", "PRINCETON TOWNSHIP MUNI C609-9245042  NJ     ", "PARKING TICKET"];
+m<s> t51cats [""];
+m<s> t51idg [""];
+d t51val -82;
+d t51bal -731.08;
+d t51bas 0;
+
+m<s> t52dd ["07/04/2018", "STARBUCKS STORE 07208    PRINCETON    NJ     ", ""];
+m<s> t52cats ["RESTAURANTS"];
+m<s> t52idg [""];
+d t52val -3.12;
+d t52bal -734.2;
+d t52bas 0;
+
+m<s> t53dd ["07/04/2018", "PAYPAL *ARTISTBRAND      402-935-7733 CA     ", "NASA TANK TOP"];
+m<s> t53cats [""];
+m<s> t53idg [""];
+d t53val -14.95;
+d t53bal -749.15;
+d t53bas 0;
+
+m<s> t54dd ["07/03/2018", "Steamgames.com4259522985 425-9522985  WA     ", "STARDEW VALLEY"];
+m<s> t54cats [""];
+m<s> t54idg [""];
+d t54val -11.99;
+d t54bal -761.14;
+d t54bas 0;
+
+m<s> t55dd ["07/02/2018", "PRINCETON TOWNSHIP MUNI C609-9245042  NJ     ", "PARKING TICKET"];
+m<s> t55cats [""];
+m<s> t55idg [""];
+d t55val -41;
+d t55bal -802.14;
+d t55bas 0;
+
+m<s> t56dd ["06/30/2018", "QDOBA 2669               PRINCETON    NJ     ", ""];
+m<s> t56cats ["RESTAURANTS"];
+m<s> t56idg [""];
+d t56val -15.67;
+d t56bal -817.81;
+d t56bas 0;
+
+m<s> t57dd ["06/29/2018", "CVS/PHARMACY #01069      PRINCETON    NJ     ", ""];
+m<s> t57cats [""];
+m<s> t57idg [""];
+d t57val -7.67;
+d t57bal -825.48;
+d t57bas 0;
+
+m<s> t58dd ["06/28/2018", "Amazon.com               AMZN.COM/BILLWA     ", ""];
+m<s> t58cats ["AMAZON"];
+m<s> t58idg [""];
+d t58val -9.65;
+d t58bal -835.13;
+d t58bas 0;
+
+m<s> t59dd ["06/28/2018", "TRADER JOE'S #607  QPS   PRINCETON    NJ     ", ""];
+m<s> t59cats ["GROCERIES"];
+m<s> t59idg [""];
+d t59val -98.8;
+d t59bal -933.93;
+d t59bas 0;
+
+m<s> t60dd ["06/25/2018", "FRUITY YOGURT PRINCETON  609-9218787  NJ     ", ""];
+m<s> t60cats ["RESTAURANTS"];
+m<s> t60idg [""];
+d t60val -5.6;
+d t60bal -939.53;
+d t60bas 0;
+
+m<s> t61dd ["06/25/2018", "USAA CREDIT CARD PAYMENT                     ", ""];
+m<s> t61cats [""];
+m<s> t61idg [""];
+d t61val 912.4;
+d t61bal -27.13;
+d t61bas 0;
+
+m<s> t62dd ["06/25/2018", "Fruity Yogurt Princeton                      ", ""];
+m<s> t62cats ["RESTAURANTS"];
+m<s> t62idg [""];
+d t62val -5.6;
+d t62bal -32.73;
+d t62bas 0;
+
+m<s> t63dd ["06/24/2018", "MTA MVM VENDING MACHINES                     ", ""];
+m<s> t63cats ["TRANSPORTATION", "NYC TRIP"];
+m<s> t63idg [""];
+d t63val -2.5;
+d t63bal -35.23;
+d t63bas 0;
+
+m<s> t64dd ["06/24/2018", "MTA MVM VENDING MACHINES                     ", ""];
+m<s> t64cats ["TRANSPORTATION", "NYC TRIP"];
+m<s> t64idg [""];
+d t64val -6.5;
+d t64bal -41.73;
+d t64bas 0;
+
+m<s> t65dd ["06/24/2018", "INTREPID MUSEUM                              ", ""];
+m<s> t65cats ["NYC TRIP"];
+m<s> t65idg [""];
+d t65val -31;
+d t65bal -72.73;
+d t65bas 0;
+
+m<s> t66dd ["06/21/2018", "WAL-MART #2171           PRINCETON    NJ     ", ""];
+m<s> t66cats [""];
+m<s> t66idg [""];
+d t66val -93.12;
+d t66bal -165.85;
+d t66bas 0;
+
+m<s> t67dd ["06/17/2018", "WAWA STORE 83300083311   PRINCETON    NJ     ", ""];
+m<s> t67cats [""];
+m<s> t67idg [""];
+d t67val -3.99;
+d t67bal -169.84;
+d t67bas 0;
+
+m<s> t68dd ["06/16/2018", "SQ *JULES THIN CRUST     Princeton    NJ     ", ""];
+m<s> t68cats ["RESTAURANTS"];
+m<s> t68idg [""];
+d t68val -6.93;
+d t68bal -176.77;
+d t68bas 0;
+
+m<s> t69dd ["06/16/2018", "TRADER JOE'S #607  QPS   PRINCETON    NJ     ", ""];
+m<s> t69cats ["GROCERIES"];
+m<s> t69idg [""];
+d t69val -32.78;
+d t69bal -209.55;
+d t69bas 0;
+
+m<s> t70dd ["06/16/2018", "PRIN UN CONF & EVENT SER 609-258-3369 NJ     ", "GYM PASS"];
+m<s> t70cats [""];
+m<s> t70idg [""];
+d t70val -100;
+d t70bal -309.55;
+d t70bas 0;
+
+m<s> t71dd ["06/16/2018", "STEAMGAMES.COM 4259522985425-8899642  WA     ", ""];
+m<s> t71cats [""];
+m<s> t71idg [""];
+d t71val -7.49;
+d t71bal -317.04;
+d t71bas 0;
+
+m<s> t72dd ["06/15/2018", "WEGMANS #93              PRINCETON    NJ     ", ""];
+m<s> t72cats ["GROCERIES"];
+m<s> t72idg [""];
+d t72val -76.52;
+d t72bal -393.56;
+d t72bas 0;
+
+m<s> t73dd ["06/14/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t73cats [""];
+m<s> t73idg [""];
+d t73val 306.79;
+d t73bal -86.77;
+d t73bas 0;
+
+m<s> t74dd ["06/13/2018", "FRUITY YOGURT PRINCETON  609-9218787  NJ     ", ""];
+m<s> t74cats ["RESTAURANTS"];
+m<s> t74idg [""];
+d t74val -4.38;
+d t74bal -91.15;
+d t74bas 0;
+
+m<s> t75dd ["06/11/2018", "PRINCETON UNIVERSITY STORPRINCETON    NJ     ", ""];
+m<s> t75cats [""];
+m<s> t75idg [""];
+d t75val -5.76;
+d t75bal -96.91;
+d t75bas 0;
+
+m<s> t76dd ["06/10/2018", "CHIPOTLE 1751            PRINCETON    NJ     ", ""];
+m<s> t76cats ["RESTAURANTS"];
+m<s> t76idg [""];
+d t76val -7.84;
+d t76bal -104.75;
+d t76bas 0;
+
+m<s> t77dd ["06/08/2018", "THE HOME DEPOT #2324     CRESCENT SPGSKY     ", ""];
+m<s> t77cats [""];
+m<s> t77idg [""];
+d t77val -41.73;
+d t77bal -146.48;
+d t77bas 0;
+
+m<s> t78dd ["06/06/2018", "AMAZON.COM AMZN.COM/BILL AMZN.COM/BILLWA     ", ""];
+m<s> t78cats ["AMAZON"];
+m<s> t78idg [""];
+d t78val -34.85;
+d t78bal -181.33;
+d t78bas 0;
+
+m<s> t79dd ["06/02/2018", "FRIDAS                   COVINGTON    KY     ", ""];
+m<s> t79cats ["RESTAURANTS"];
+m<s> t79idg [""];
+d t79val -16.38;
+d t79bal -197.71;
+d t79bas 0;
+
+m<s> t80dd ["06/01/2018", "BARNES & NOBLE #2957     SEATTLE      WA     ", ""];
+m<s> t80cats ["RESTAURANTS"];
+m<s> t80idg [""];
+d t80val -22.69;
+d t80bal -220.4;
+d t80bas 0;
+
+m<s> t81dd ["05/23/2018", "AMAZON MKTPLACE PMTS     AMZN.COM/BILLWA     ", ""];
+m<s> t81cats ["AMAZON"];
+m<s> t81idg [""];
+d t81val -59.27;
+d t81bal -279.67;
+d t81bas 0;
+
+m<s> t82dd ["05/23/2018", "TEQUIPMENT.NET           732-7282583  NJ     ", ""];
+m<s> t82cats ["ELECTRONICS"];
+m<s> t82idg [""];
+d t82val -351.85;
+d t82bal -631.52;
+d t82bas 0;
+
+m<s> t83dd ["05/21/2018", "THE HOME DEPOT #2324     CRESCENT SPGSKY     ", ""];
+m<s> t83cats [""];
+m<s> t83idg [""];
+d t83val -29.25;
+d t83bal -660.77;
+d t83bas 0;
+
+m<s> t84dd ["05/21/2018", "STAPLES       00116038   CRESCENT SPRIKY     ", ""];
+m<s> t84cats ["EDUCATION"];
+m<s> t84idg [""];
+d t84val -17.57;
+d t84bal -678.34;
+d t84bas 0;
+
+m<s> t85dd ["05/16/2018", "KROGER FUEL #8733       QDANVILLE     KY     ", ""];
+m<s> t85cats ["GROCERIES", "FUEL"];
+m<s> t85idg [""];
+d t85val -25.21;
+d t85bal -703.55;
+d t85bas 0;
+
+m<s> t86dd ["05/16/2018", "JIMMY JOHNS - 1381       CRESCENT SPRIKY     ", ""];
+m<s> t86cats ["RESTAURANTS"];
+m<s> t86idg [""];
+d t86val -5.61;
+d t86bal -709.16;
+d t86bas 0;
+
+m<s> t87dd ["05/14/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t87cats [""];
+m<s> t87idg [""];
+d t87val 532.04;
+d t87bal -177.12;
+d t87bas 0;
+
+m<s> t88dd ["05/08/2018", "Amazon.com               AMZN.COM/BILLWA     ", ""];
+m<s> t88cats ["AMAZON"];
+m<s> t88idg [""];
+d t88val -48.16;
+d t88bal -225.28;
+d t88bas 0;
+
+m<s> t89dd ["05/08/2018", "WAL-MART #0692           DANVILLE     KY     ", ""];
+m<s> t89cats [""];
+m<s> t89idg [""];
+d t89val -10.84;
+d t89bal -236.12;
+d t89bas 0;
+
+m<s> t90dd ["05/04/2018", "FAMOUS RECIPE OF DANVILLEDANVILLE     KY     ", ""];
+m<s> t90cats ["RESTAURANTS"];
+m<s> t90idg [""];
+d t90val -74.17;
+d t90bal -310.29;
+d t90bas 0;
+
+m<s> t91dd ["05/04/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t91cats ["GROCERIES"];
+m<s> t91idg [""];
+d t91val -6.34;
+d t91bal -316.63;
+d t91bas 0;
+
+m<s> t92dd ["05/03/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t92cats ["GROCERIES"];
+m<s> t92idg [""];
+d t92val -7.48;
+d t92bal -324.11;
+d t92bas 0;
+
+m<s> t93dd ["05/03/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t93cats ["GROCERIES"];
+m<s> t93idg [""];
+d t93val -89.24;
+d t93bal -413.35;
+d t93bas 0;
+
+m<s> t94dd ["04/30/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t94cats ["GROCERIES"];
+m<s> t94idg [""];
+d t94val -3.99;
+d t94bal -417.34;
+d t94bas 0;
+
+m<s> t95dd ["04/27/2018", "AMAZON MKTPLACE PMTS     AMZN.COM/BILLWA     ", ""];
+m<s> t95cats ["AMAZON"];
+m<s> t95idg [""];
+d t95val -18.1;
+d t95bal -435.44;
+d t95bas 0;
+
+m<s> t96dd ["04/25/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t96cats ["GROCERIES"];
+m<s> t96idg [""];
+d t96val -17.65;
+d t96bal -453.09;
+d t96bas 0;
+
+m<s> t97dd ["04/17/2018", "MATHWORKS                www mathworksMA     ", ""];
+m<s> t97cats ["EDUCATION"];
+m<s> t97idg [""];
+d t97val -51.94;
+d t97bal -505.03;
+d t97bas 0;
+
+m<s> t98dd ["04/17/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t98cats ["GROCERIES"];
+m<s> t98idg [""];
+d t98val -21.23;
+d t98bal -526.26;
+d t98bas 0;
+
+m<s> t99dd ["04/14/2018", "285126393                888-434-4532 MD     ", ""];
+m<s> t99cats [""];
+m<s> t99idg [""];
+d t99val -61.48;
+d t99bal -587.74;
+d t99bas 0;
+
+m<s> t100dd ["04/13/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t100cats [""];
+m<s> t100idg [""];
+d t100val 490.28;
+d t100bal -97.46;
+d t100bas 0;
+
+m<s> t101dd ["04/11/2018", "KROGER FUEL #8733       QDANVILLE     KY     ", ""];
+m<s> t101cats ["GROCERIES", "FUEL"];
+m<s> t101idg [""];
+d t101val -26.47;
+d t101bal -123.93;
+d t101bas 0;
+
+m<s> t102dd ["04/11/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t102cats ["GROCERIES"];
+m<s> t102idg [""];
+d t102val -31.51;
+d t102bal -155.44;
+d t102bas 0;
+
+m<s> t103dd ["04/11/2018", "4716 Great Clips at DanviDANVILLE     KY     ", ""];
+m<s> t103cats [""];
+m<s> t103idg [""];
+d t103val -15;
+d t103bal -170.44;
+d t103bas 0;
+
+m<s> t104dd ["04/03/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t104cats ["GROCERIES"];
+m<s> t104idg [""];
+d t104val -16.73;
+d t104bal -187.17;
+d t104bas 0;
+
+m<s> t105dd ["04/02/2018", "Amazon.com               AMZN.COM/BILLWA     ", ""];
+m<s> t105cats ["AMAZON"];
+m<s> t105idg [""];
+d t105val -21.77;
+d t105bal -208.94;
+d t105bas 0;
+
+m<s> t106dd ["03/27/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t106cats ["GROCERIES"];
+m<s> t106idg [""];
+d t106val -10.28;
+d t106bal -219.22;
+d t106bas 0;
+
+m<s> t107dd ["03/27/2018", "AMAZON MKTPLACE PMTS WWW.WWW.AMAZON.COWA     ", ""];
+m<s> t107cats ["AMAZON"];
+m<s> t107idg [""];
+d t107val -86.57;
+d t107bal -305.79;
+d t107bas 0;
+
+m<s> t108dd ["03/25/2018", "BP#95416992447 ANDERSON  CRESCENT SPRIKY     ", ""];
+m<s> t108cats ["FUEL"];
+m<s> t108idg [""];
+d t108val -26.35;
+d t108bal -332.14;
+d t108bas 0;
+
+m<s> t109dd ["03/22/2018", "PAYPAL *MOUSERELECT      402-935-7733 TX     ", ""];
+m<s> t109cats ["ELECTRONICS"];
+m<s> t109idg [""];
+d t109val -61.97;
+d t109bal -394.11;
+d t109bas 0;
+
+m<s> t110dd ["03/22/2018", "PAYPAL *JLCPCB           4029357733   HK     ", ""];
+m<s> t110cats ["ELECTRONICS"];
+m<s> t110idg [""];
+d t110val -100.74;
+d t110bal -494.85;
+d t110bas 0;
+
+m<s> t111dd ["03/15/2018", "HARRY'S 888-212-6855     HTTPSWWW.HARRNY     ", ""];
+m<s> t111cats [""];
+m<s> t111idg [""];
+d t111val -21;
+d t111bal -515.85;
+d t111bas 0;
+
+m<s> t112dd ["03/14/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t112cats [""];
+m<s> t112idg [""];
+d t112val 209.43;
+d t112bal -306.42;
+d t112bas 0;
+
+m<s> t113dd ["03/09/2018", "PAYPAL *NUMATO LAB       402-935-7733 CA     ", ""];
+m<s> t113cats ["ELECTRONICS"];
+m<s> t113idg [""];
+d t113val -29.95;
+d t113bal -336.37;
+d t113bas 0;
+
+m<s> t114dd ["03/09/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t114cats ["GROCERIES"];
+m<s> t114idg [""];
+d t114val -23.14;
+d t114bal -359.51;
+d t114bas 0;
+
+m<s> t115dd ["03/09/2018", "PANINI KABOB GRILL - OFFER REBATE            ", ""];
+m<s> t115cats ["RESTAURANTS"];
+m<s> t115idg [""];
+d t115val 1.78;
+d t115bal -357.73;
+d t115bas 0;
+
+m<s> t116dd ["03/08/2018", "SPEEDWAY 07405 528       CRESCENT SPRIKY     ", ""];
+m<s> t116cats ["FUEL"];
+m<s> t116idg [""];
+d t116val -22.66;
+d t116bal -380.39;
+d t116bas 0;
+
+m<s> t117dd ["03/07/2018", "LAX AIRP ASHLAND HILL T3 LOS ANGELES  CA     ", ""];
+m<s> t117cats ["EDUCATION", "TRANSPORTATION"];
+m<s> t117idg [""];
+d t117val -18.53;
+d t117bal -398.92;
+d t117bas 0;
+
+m<s> t118dd ["03/06/2018", "PANINI KABOB GRILL       LOS ANGELES  CA     ", ""];
+m<s> t118cats ["RESTAURANTS"];
+m<s> t118idg [""];
+d t118val -35.5;
+d t118bal -434.42;
+d t118bas 0;
+
+m<s> t119dd ["03/06/2018", "2LEVYATLACONVT14554232   LOS ANGELES  CA     ", ""];
+m<s> t119cats ["RESTAURANTS"];
+m<s> t119idg [""];
+d t119val -9.5;
+d t119bal -443.92;
+d t119bas 0;
+
+m<s> t120dd ["03/05/2018", "2LEVYATLACONVT14554232   LOS ANGELES  CA     ", ""];
+m<s> t120cats ["RESTAURANTS"];
+m<s> t120idg [""];
+d t120val -12.5;
+d t120bal -456.42;
+d t120bas 0;
+
+m<s> t121dd ["03/04/2018", "LYFT   *RIDE SUN 5PM     LYFT.COM     CA     ", ""];
+m<s> t121cats ["TRANSPORTATION"];
+m<s> t121idg [""];
+d t121val -4;
+d t121bal -460.42;
+d t121bas 0;
+
+m<s> t122dd ["03/04/2018", "LYFT   *RIDE SUN 5PM     LYFT.COM     CA     ", ""];
+m<s> t122cats ["TRANSPORTATION"];
+m<s> t122idg [""];
+d t122val -16.3;
+d t122bal -476.72;
+d t122bas 0;
+
+m<s> t123dd ["02/27/2018", "OSHPARK.COM              8778877815   OR     ", ""];
+m<s> t123cats ["ELECTRONICS"];
+m<s> t123idg [""];
+d t123val -23.6;
+d t123bal -500.32;
+d t123bas 0;
+
+m<s> t124dd ["02/27/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t124cats ["GROCERIES"];
+m<s> t124idg [""];
+d t124val -18.24;
+d t124bal -518.56;
+d t124bas 0;
+
+m<s> t125dd ["02/23/2018", "AMERICAN PHYSICAL SOCI   301-209-3200 MD     ", ""];
+m<s> t125cats ["EDUCATION"];
+m<s> t125idg [""];
+d t125val -40;
+d t125bal -558.56;
+d t125bas 0;
+
+m<s> t126dd ["02/21/2018", "WAL-MART #0692           DANVILLE     KY     ", ""];
+m<s> t126cats [""];
+m<s> t126idg [""];
+d t126val -1.02;
+d t126bal -559.58;
+d t126bas 0;
+
+m<s> t127dd ["02/21/2018", "4716 Great Clips at DanviDANVILLE     KY     ", ""];
+m<s> t127cats [""];
+m<s> t127idg [""];
+d t127val -15;
+d t127bal -574.58;
+d t127bas 0;
+
+m<s> t128dd ["02/19/2018", "AMAZON MKTPLACE PMTS     AMZN.COM/BILLWA     ", ""];
+m<s> t128cats ["AMAZON"];
+m<s> t128idg [""];
+d t128val -18.98;
+d t128bal -593.56;
+d t128bas 0;
+
+m<s> t129dd ["02/18/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t129cats ["GROCERIES"];
+m<s> t129idg [""];
+d t129val -53.17;
+d t129bal -646.73;
+d t129bas 0;
+
+m<s> t130dd ["02/17/2018", "Amazon.com               AMZN.COM/BILLWA     ", ""];
+m<s> t130cats ["AMAZON"];
+m<s> t130idg [""];
+d t130val -127.19;
+d t130bal -773.92;
+d t130bas 0;
+
+m<s> t131dd ["02/14/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t131cats [""];
+m<s> t131idg [""];
+d t131val 213.91;
+d t131bal -560.01;
+d t131bas 0;
+
+m<s> t132dd ["02/09/2018", "MOUSER ELECTRONICS INC   800-346-6873 TX     ", ""];
+m<s> t132cats ["ELECTRONICS"];
+m<s> t132idg [""];
+d t132val -25.95;
+d t132bal -585.96;
+d t132bas 0;
+
+m<s> t133dd ["02/09/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t133cats ["GROCERIES"];
+m<s> t133idg [""];
+d t133val -32.3;
+d t133bal -618.26;
+d t133bas 0;
+
+m<s> t134dd ["02/07/2018", "OSHPARK.COM              8778877815   OR     ", ""];
+m<s> t134cats ["ELECTRONICS"];
+m<s> t134idg [""];
+d t134val -50.35;
+d t134bal -668.61;
+d t134bas 0;
+
+m<s> t135dd ["02/01/2018", "AMAZON MKTPLACE PMTS WWW.WWW.AMAZON.COWA     ", ""];
+m<s> t135cats ["AMAZON"];
+m<s> t135idg [""];
+d t135val -9.95;
+d t135bal -678.56;
+d t135bas 0;
+
+m<s> t136dd ["01/30/2018", "HARRY'S 888-212-6855     WWW.HARRYS.CONY     ", ""];
+m<s> t136cats [""];
+m<s> t136idg [""];
+d t136val -3;
+d t136bal -681.56;
+d t136bas 0;
+
+m<s> t137dd ["01/30/2018", "STAPLES       00116038   CRESCENT SPRIKY     ", ""];
+m<s> t137cats [""];
+m<s> t137idg [""];
+d t137val -37.05;
+d t137bal -718.61;
+d t137bas 0;
+
+m<s> t138dd ["01/26/2018", "Amazon.com               AMZN.COM/BILLWA     ", ""];
+m<s> t138cats ["AMAZON"];
+m<s> t138idg [""];
+d t138val -9.86;
+d t138bal -728.47;
+d t138bas 0;
+
+m<s> t139dd ["01/25/2018", "AMAZON MKTPLACE PMTS     AMZN.COM/BILLWA     ", ""];
+m<s> t139cats ["AMAZON"];
+m<s> t139idg [""];
+d t139val -23.99;
+d t139bal -752.46;
+d t139bas 0;
+
+m<s> t140dd ["01/20/2018", "GOULET PEN COMPANY       804-368-0482 VA     ", ""];
+m<s> t140cats [""];
+m<s> t140idg [""];
+d t140val -18.76;
+d t140bal -771.22;
+d t140bas 0;
+
+m<s> t141dd ["01/14/2018", "AUTOMATIC PAYMENT - THANK YOU                ", ""];
+m<s> t141cats [""];
+m<s> t141idg [""];
+d t141val 367.21;
+d t141bal -404.01;
+d t141bas 0;
+
+m<s> t142dd ["01/12/2018", "KROGER #733              DANVILLE     KY     ", ""];
+m<s> t142cats ["GROCERIES"];
+m<s> t142idg [""];
+d t142val -28.69;
+d t142bal -432.7;
+d t142bas 0;
+
