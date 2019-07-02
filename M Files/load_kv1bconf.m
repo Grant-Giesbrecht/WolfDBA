@@ -7,6 +7,8 @@
 %	filename - file to read into the workspace
 %
 % New Rules:
+%	* Must have a string called 'datadir' indicating the directory in which
+%	  all data files are stored.
 %	* Filenames listed in the 'files' field must not contain spaces
 %	* Must include all data shown in the below example
 %	* Must go in the example's order (because it triggers a write when
@@ -17,7 +19,7 @@
 % 		s a0bank "USAA FSB";
 % 		m<s> a0files ["USAA_Visa2018fmt.kv1"]; //		<----- This will trigger a write operation
 %=========================================================================%
-function db_new=load_kv1bconf(filename, save_header)
+function [db_new, datadir]=load_kv1bconf(filename, save_header)
 
 	if ~exist('save_header','var')
 		save_header = 1;
@@ -31,12 +33,13 @@ function db_new=load_kv1bconf(filename, save_header)
 	
     header = "";
     version = -1;
-
+	database_directory = '';
+	
     line_num = 0;
 
     %Open file
     fid = fopen(filename);
-
+	
     %Read file line by line
     while(~feof(fid))
         sline = fgetl(fid);
@@ -94,6 +97,15 @@ function db_new=load_kv1bconf(filename, save_header)
 				elseif (namecharar(end-3:end) == 'bank')
 					ans_cell = (words(3));
 					atemp.bank_name = strrep(ans_cell{1}, '"', '');
+				elseif (namecharar == 'datadir')
+					ans_cell = strcat(words(3:end));
+					database_directory = '';
+					for ac=ans_cell
+						if (~isempty(database_directory))
+							database_directory = [database_directory, ' '];
+						end
+						database_directory = [database_directory, char(strrep(ac, '"', ''))];
+					end
 				else
 					display(['ERROR: Invalid variable name for banking configuration file.']);
 					display(['Failed on line ', num2str(line_num), '.']);
@@ -155,18 +167,24 @@ function db_new=load_kv1bconf(filename, save_header)
 	end
 
 	cfn = char(filename);
-	k = find(cfn == '.');
-	fn_start = cfn(1:k(1)-1);
+	j = find(cfn == '/', 1', 'last');
+	k = find(cfn == '.', 1, 'last');
+	fn_start = cfn(j+1:k(1)-1);
 	if (save_header)
 		assignin('base', [fn_start, '_header'], (header));
 	end
     db_new = database;
+	datadir = database_directory;
     
 end
 
 %=========================================================================%
 %========================= DATABASE STRUCTURE ============================%
 %=========================================================================%
+%
+%			********************************************
+%			**** THIS GRAPHIC IS NO LONGER ACCURATE! ***
+%			********************************************
 %
 % +----------------+
 % |PARENT DIRECTORY|

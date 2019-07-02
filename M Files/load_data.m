@@ -14,14 +14,18 @@ function load_data(conf_file, database_name)
 	%----------------------------------------------------------------------
 	%- Read configuration file - load all account info except BankEntries -
 	
-	db = load_kv1bconf(conf_file, 0);
+	[db, dd] = load_kv1bconf(conf_file, 0);
 	
 	%----------------------------------------------------------------------
 	%-------------------------- Load BankEntries --------------------------
 	
+	if ~exist('dd','var')
+		dd = './';
+	end
+	
 	for acctnum=1:length(db)
 		for filenum=1:length(db(acctnum).files)
-			db = load_kv1bank(db(acctnum).files(filenum), db, acctnum, 0);
+			db = load_kv1bank([dd, char(db(acctnum).files(filenum))], db, acctnum, 0);
 		end
 	end
 	

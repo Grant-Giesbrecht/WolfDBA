@@ -1,0 +1,47 @@
+**************************************************************
+****************** WolfDBA Usage Suggestions *****************
+**************************************************************
+
+Installation:
+
+	1. Create a bconf file containing all account information.
+	   Install the bconf file in a directory on the MATLAB path
+	   so you can locate it just with the file name. ~/Documents
+	   /MATLAB/ is one such example. 
+
+	2. Add your database files (KV1Bank files) to the directory
+	   you specified in you bconf file.
+
+	3. Download the .m files of WolfDBA. Put them in a directory
+	   on the MATLAB path. We advise that you put them in their
+	   own directory and add that directory to the MATLAB path.
+	   MATLAB has instructions on how to do that.
+
+			-- Now you're all set! --
+
+
+Usage/Scripting:
+    
+    This section will describe how we recommend you structure your
+    scripts. Although not all will look like this, this is the 
+    boilerplate that works best for 90% of your progams and scripts.
+    Plus, this will get you familiar with the system and comfortable
+    making your own system.
+
+	1. ACCESS THE DATABASE: We recommend using load_data(). It makes
+	   calls to the two functions used for reading WolfDBA's two file
+	   types - load_kv1bank() and load_kv1bconf(). It uses load_kv1bconf
+	   to read your bconf and find your accounts and their data files.
+	   It then uses load_kv1bank() for each data file to read in your
+	   database.
+	   
+	   ex: load_data("your_file.bconf", "db");
+
+    	2. FILTER ACCOUNTS & ENTRIES: Use filter_acct() to access the
+	   accounts you're interested in. Use filter_entries() to 
+	   access entries of interest.
+
+	3. DISPLAY DATA: Use get_vectors() to convert your account objects 
+	   into vectors which can be plotted easily with MATLAB's 
+	   built-in plotting functions. 
+

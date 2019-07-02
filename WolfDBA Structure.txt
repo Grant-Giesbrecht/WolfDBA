@@ -1,0 +1,237 @@
+*******************************************************************************
+****************************** WolfDBA Structure ******************************
+*******************************************************************************
+
+
+Classes/Types:
+--------------------------------------------------------------------------------
+
+    Account (Class):
+        %=========================================================================%
+        % This class represents a single account such as a checking account,
+        % savings account, credit card, or investement portfolio.
+        %
+        % Fields:
+        %	name - Name of account (eg. USAA Visa)
+        %	entries - List of 'BankEntry' objects, one for each transaction/event.
+        %	acct_type - The type of account:
+        %		* Checking	* Savings	* Credit	* Investment
+        %	acct_number - The last few digits of the account number (Optional)
+        %	bank_name - The name of the bank holding the account (Optional)
+        %	filtered - Indicates whether or not some entries have been removed by a
+        %		filtering function. 0=not filtered, 1=filtered.
+        %
+        %=========================================================================%
+
+    BankEntry (Class):
+        %=========================================================================%
+        % This class represents a single entry in the banking database - a single
+        % transaction or a single data point.
+        %
+        % Fields:
+        %	memo - Transaction memo provided by bank
+        %	desc - Transaction description provided by user (optional)
+        %	value - Amount of funds moved in transaction
+        %	balance - Net worth of account after this transaction occured
+        %	basis - Amound of funds added by owner to account (ie. balance -
+        %     interest)
+        %	date - Date transaction occurred (MM/DD/YYYY)
+        %	categories - Array of strings of category names (eg. Fuel, food,
+        %     entertainment, lab eq.)
+        %	idgroups - Array of strings of listing ID Groups the entry belongs to.
+        %     An ID group is an easy way to identify many related transaction, for
+        %     example all of the transaction from one trip or for one project.
+        %
+        %=========================================================================%
+
+    Database (Type):
+        * Is defined as an array of Account objects.
+        * Is used to describe a financial database - ie. a set of user accounts
+
+
+
+Functions:
+--------------------------------------------------------------------------------
+    filter_acct:
+        accts_out= filter_acct (db_in, varargin)
+        %=========================================================================%
+        % This function is fed a set of arguments specifying filters and returns
+        % the matching accounts. Pattern: <filter_parameter>, <filter_value>.
+        %
+        %	ie. database (array of 'Account's) --> single 'Account'
+        %
+        % Filter options:
+        %	Name
+        %	Type
+        %
+        % Arguments:
+        %
+        %
+        %
+        %=========================================================================%
+
+    filter_entries:
+        acct_out = filter_entries (acct_in, varargin)
+        %=========================================================================%
+        % This function is fed a set of arguments specifying filters and returns
+        % the matching entries. Pattern: <filter_parameter>, <filter_value>.
+        %
+        %	ie. Account --> Account (w/ some entries removed)
+        %
+        % Filter options:
+        %	Category	IDGrp
+        %	TimeS		Memo
+        %	TimeE		Desc
+        %
+        % Arguments:
+        %
+        %
+        %
+        %=========================================================================%
+
+    get_vectors:
+        [dates, values, balances, bases] = getVectors (account, merge_common_Xs)
+        %=========================================================================%
+        % This function takes the data stored in the entries of an 'Account' obj
+        % and saves their values in arrays. In other words, this function changes
+        % the way data are stored from an array of objects w/ multiple fields  to
+        % set of multiple arrays (s.t. each array contains the data for one field).
+        %
+        % Arguments:
+        % 	account - The account whose data you wish to extract into vector form
+        %	merge_common_Xs (opt) - Determines if two consecutive cells with the
+        % 		same time value should be merged. This is designed to accomodate
+        % 		bar graphs. Default is 0. 0=off, 1=on.
+        %
+        % Returns:
+        %	[date_vector, value_vector, balance_vector, basis_vector]
+        %=========================================================================%
+
+    load_data:
+        load_data (conf_file, database_name)
+        %=========================================================================%
+        % Loads financial data from a local KV1 database into the workspace for
+        % analysis with other banking functions.
+        %
+        % Arguments:
+        %	conf_file - Bank configuration file (kv1 format) from which to read database
+        %	  configuration.
+        %
+        %
+        %
+        %=========================================================================%
+
+    load_kv1bank:
+        db_new = load_kv1bank (filename, database, account, save_header)
+        %=========================================================================%
+        % Loads a KV1 file much like load_kv1(), except instead of saving all
+        % variables to the workspace, it groups the variables by name and saves
+        % them into BankEntry objects.
+        %
+        % Arguments:
+        %	filename - file to read into the workspace
+        %	database - database struct in the workspace (to which to add (in returned variable))
+        %	account - account in the database to which to add the BankEntries
+        %
+        % New Rules:
+        %	*
+        %	* Must include all data shown in the below example
+        %	* Must go in the example's order (because it triggers a write when
+        %	  t0bas (ie. the basis) is read):
+        % 		m<s> t0dd ["04/28/2019", "JAMECO/JIMPAK ELECTRONICS650-5928097 CA", ""];
+        % 		m<s> t0cats ["ELECTRONICS"];
+        % 		m<s> t0idg ["California Adventure"];
+        % 		d t0val -24.63;
+        % 		d t0bal 1000;
+        % 		d t0bas 1000;		//		<----- This will trigger a write operation
+        %=========================================================================%
+
+    load_kv1bconf:
+        db_new = load_kv1bconf (filename, save_header)
+        %=========================================================================%
+        % Loads a KV1 file much like load_kv1(), except instead of saving all
+        % variables to the workspace, it groups the variables by name and saves
+        % them into Account objects.
+        %
+        % Arguments:
+        %	filename - file to read into the workspace
+        %
+        % New Rules:
+        %	* Filenames listed in the 'files' field must not contain spaces
+        %	* Must include all data shown in the below example
+        %	* Must go in the example's order (because it triggers a write when
+        %	  t0files (ie. the basis) is read):
+        % 		s a0name "USAA_Visa";
+        % 		s a0type "Credit";
+        % 		d a0num -1;
+        % 		s a0bank "USAA FSB";
+        % 		m<s> a0files ["USAA_Visa2018fmt.kv1"]; //		<----- This will trigger a write operation
+        %=========================================================================%
+
+    load_data:
+        load_data (conf_file)
+        %=========================================================================%
+        % Loads financial data from a local KV1 database into the workspace for
+        % analysis with other banking functions.
+        %
+        % Arguments:
+        %	conf_file - Bank configuration file (kv1 format) from which to read database
+        %	  configuration.
+        %
+        %
+        %
+        %=========================================================================%
+
+    [INCOMPLETE] sum_groups:
+        [group_sums, group_labels] = sum_groups (database)
+        %=========================================================================%
+        % Calculates the sum of all the 'value' entries of all entries of the
+        %
+        % Arguments:
+        %	conf_file - Bank configuration file (kv1 format) from which to read database
+        %	  configuration.
+        %
+        %
+        %
+        %=========================================================================%
+
+
+    [INCOMPLETE] getDates:
+        No info
+
+
+File Standards:
+--------------------------------------------------------------------------------
+
+    KV1Bank: (ext. KV1)
+        KV1 file which has its contents structured into groups, each of which
+        contain the data for one BankEntry object. In WolfDBA, these files are
+        used to contain the data of one year of one account.
+
+        New Rules:
+        	* Must include all data shown in the below example
+        	* Must go in the example's order (because it triggers a write when
+        	  t0bas (ie. the basis) is read):
+         		m<s> t0dd ["04/28/2019", "JAMECO/JIMPAK ELECTRONICS650-5928097 CA", ""];
+         		m<s> t0cats ["ELECTRONICS"];
+         		m<s> t0idg ["California Adventure"];
+         		d t0val -24.63;
+         		d t0bal 1000;
+         		d t0bas 1000;		//		<----- This will trigger a write operation
+
+    KV1BankConf: (ext. KV1)
+        KV1 file which has its contents structured into groups, each of which
+        contain the data of one Account object. In WolfDBA, these files are used
+        to describe a user's set of accounts - ie. it tells WolfDBA what the
+        user's accounts are and where to find their data files (KV1Bank files).
+
+        New Rules:
+        	* Filenames listed in the 'files' field must not contain spaces
+        	* Must include all data shown in the below example
+        	* Must go in the example's order (because it triggers a write when
+        	  t0files (ie. the basis) is read):
+         		s a0name "USAA_Visa";
+         		s a0type "Credit";
+         		d a0num -1;
+         		s a0bank "USAA FSB";
+         		m<s> a0files ["USAA_Visa2018fmt.kv1"]; //		<----- This will trigger a write operation

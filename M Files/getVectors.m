@@ -17,7 +17,7 @@ function [dates, values, balances, bases] = getVectors(account, merge_common_Xs)
 
 	%Check to see if optional argument was provided
 	if ~exist('merge_common_Xs','var')
-		save_header = 0;
+		merge_common_Xs = 0;
 	end
 
 	dstr = string.empty();
