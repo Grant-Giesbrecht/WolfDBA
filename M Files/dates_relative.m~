@@ -1,0 +1,33 @@
+% Gets the start and end dates (to feed into a 'filter_entries' call) for a
+% specified time period (eg. last 30 days, year to date, etc). 
+%
+% Arguments:
+%	t - Date to reference
+%	mode - How to specify range. Options:
+%		'num' - Get range based on # of days
+%		'cal' - Get range based on calendar deliniations
+%	val - Value for range. Options:
+%		(mode = 'num'):
+%			integer - (+) = future. (-) = past. (This is slow for large #s
+%			of days (goes in batches of 30)
+%				ex. dates_relative(datetime(date), "num", -30); %Gets the
+%				past 30 days.
+%		(mode = 'cal'):
+%			'ytd' - Gets year to date
+%			'mtd' - Gets month to date
+%
+function[start, end] = dates_relative(t, mode, value)
+
+	if (strcmp(mode, "num") == 1)
+		
+		found = 0;
+		while (~found)
+			
+			nd = dateshift(t, 'start', 'month'); %Set date back about 30 days. Turn into array (to get # days)
+			
+			if (
+		end
+	elseif (strcmp(mode, "cal") == 1)
+	end
+
+end

@@ -50,35 +50,35 @@ function acct_out=filter_entries(acct_in, varargin)
 				end
 			end
 		elseif(strcmp(fltr, "IDGrp") == 1)
-			for i=1:length(acct_in.entries) %Check each account
+			for i=1:length(acct_in.entries) %Check each entry
 				if (~isempty(find(db_in.entries(i).idgroups == val))) %Check to see if idgroups contains value
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
 				end
 			end
 		if(strcmp(fltr, "Memo") == 1)
-			for i=1:length(acct_in.entries) %Check each account
+			for i=1:length(acct_in.entries) %Check each entry
 				if (contains(acct_in.entries(i).memo, val) == 1)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
 				end
 			end
 		elseif(strcmp(fltr, "Desc") == 1)
-			for i=1:length(acct_in.entries) %Check each account
+			for i=1:length(acct_in.entries) %Check each entry
 				if (contains(acct_in.entries(i).desc, val) == 1)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
 				end
 			end
-% 		elseif(strcmp(fltr, "TimeS") == 1)
-% 			for i=1:length(acct_in.entries) %Check each account
-% 				if (contains(acct_in.entries(i).desc, val) == 1)
-% 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
-% 				end
-% 			end
-% 		elseif(strcmp(fltr, "TimeE") == 1)
-% 			for i=1:length(acct_in.entries) %Check each account
-% 				if (contains(acct_in.entries(i).desc, val) == 1)
-% 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
-% 				end
-% 			end
+		elseif(strcmp(fltr, "TimeS") == 1)
+			for i=1:length(acct_in.entries) %Check each entry
+				if (acct_in.entries(i).date >= val)
+					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if date occurs on or after start date
+				end
+			end
+		elseif(strcmp(fltr, "TimeE") == 1)
+			for i=1:length(acct_in.entries) %Check each entry
+				if (acct_in.entries(i).date <= val)
+					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if date occurs on or before end date
+				end
+			end
 		else
 			disp(['Filter "', char(varargin(i)), '" unrecognized. See comments for options.']);
 		end

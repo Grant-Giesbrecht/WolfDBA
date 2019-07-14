@@ -1,3 +1,6 @@
+%
+%
+%
 function [dates, values, balances, bases] = getVectors(account)
 
 	%Create array of dates and values
@@ -10,7 +13,5 @@ function [dates, values, balances, bases] = getVectors(account)
 	
 	%Convert date strings to date objects
 	d = datetime( dstr , 'InputFormat', 'MM/dd/uuuu');
-	
-	
 	
 end

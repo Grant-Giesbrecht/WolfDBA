@@ -1,24 +1,31 @@
-clear all;
-close all;
+%Load banking data (if not already loaded)
+if (~exist("db", "var"))
+	load_data("ggiesbrecht.bconf", "db");
+end
 
-load_data("ggiesbrecht.bconf", "db");
-
+%Select Visa
 visa = filter_acct(db, 'Name', 'USAA_Visa');
-discover = filter_acct(db, 'Name', 'Discover_It');
+if (length(disc) < 1)
+	disp('Warning: No Accounts satisfied the filter conditions. Exiting.');
+	return;
+end
 
-[timesV, valuesV, balancesV, basesV] = getVectors(visa);
-[timesD, valuesD, balancesD, basesD] = getVectors(discover);
-% plot(times, balances, 'LineStyle', '-', 'Marker', '+');
-[timescolV, balcolV] = merge_dates(timesV, balancesV);
-[timescolD, balcolD] = merge_dates(timesD, balancesD);
+%Plot balance over time
+[times, values, balances, bases] = getVectors(visa);
+figure(1);
 hold off;
-bar(timescolV, -1.*balcolV);
-hold on;
-% bar(timescolD, -1.*balcolD);
+plot(times, balances, 'LineStyle', '-', 'Marker', '+');
+grid on;
+xlabel("Date");
+ylabel("Balance ($)");
+title("USAA Visa Balance");
 
+%Show bar graph of expenditure
+[timescol, balcol] = merge_dates(times, balances);
+figure(2);
+hold off;
+bar(timescol, -1.*balcol);
+grid on;
 xlabel("Date");
 ylabel("Expenditure ($)");
-title("USAA Visa");
-% ylim([0, max(balances)*1.1]);
-grid on;
-% legend("balance", "basis")
+title("USAA Visa Expenditure");
