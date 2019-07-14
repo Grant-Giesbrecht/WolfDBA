@@ -51,6 +51,7 @@ function db_new=load_kv1bank(filename, database, account, save_header)
         line_num = line_num+1;
 
         words = strsplit(sline, {' ', ']', '[', ';', ','}, 'CollapseDelimiters', true);
+		strwords = strsplit(sline, {'"'}, 'CollapseDelimiters', true);
 
         %Skip empty lines
         if (isempty(sline))
@@ -131,9 +132,16 @@ function db_new=load_kv1bank(filename, database, account, save_header)
 							end
 						end
 					elseif (namecharar(end-1:end) == 'dd')
-						betemp.date = strrep(words(3),'"','');
-						betemp.memo = strrep(words(4),'"','');
-						betemp.desc = strrep(words(5),'"','');
+						temp = strrep(words(3),'"','');
+						betemp.date = temp{1};
+						temp = strrep(strwords(4),'"','');
+						betemp.memo = temp{1};
+						if (length(strwords) > 6)
+							temp = strrep(strwords(6),'"','');
+							betemp.desc = temp{1};
+						else
+							betemp.desc = "";
+						end
 					else
 						display(['ERROR: Invalid variable name for banking database.']);
 						display(['Failed on line ', num2str(line_num), '.']);
