@@ -21,13 +21,13 @@ function date_summary(accts, date)
 			disp('  Categories: ');
 			for c=ent.entries(ie).categories
 				if (c~="")
-					disp(['    ', c]);
+					disp(['    ', char(c)]);
 				end
 			end
 			disp('  ID Groups: ');
 			for g=ent.entries(ie).idgroups
 				if (g~="")
-					disp(['    ', g]);
+					disp(['    ', char(g)]);
 				end
 			end
 		end
