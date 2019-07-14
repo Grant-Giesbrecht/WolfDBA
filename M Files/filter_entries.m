@@ -55,7 +55,7 @@ function acct_out=filter_entries(acct_in, varargin)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
 				end
 			end
-		if(strcmp(fltr, "Memo") == 1)
+		elseif(strcmp(fltr, "Memo") == 1)
 			for i=1:length(acct_in.entries) %Check each entry
 				if (contains(acct_in.entries(i).memo, val) == 1)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if it matches
@@ -69,13 +69,13 @@ function acct_out=filter_entries(acct_in, varargin)
 			end
 		elseif(strcmp(fltr, "TimeS") == 1)
 			for i=1:length(acct_in.entries) %Check each entry
-				if (acct_in.entries(i).date >= val)
+				if (datetime(acct_in.entries(i).date, 'InputFormat', 'MM/dd/uuuu') >= val)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if date occurs on or after start date
 				end
 			end
 		elseif(strcmp(fltr, "TimeE") == 1)
 			for i=1:length(acct_in.entries) %Check each entry
-				if (acct_in.entries(i).date <= val)
+				if (datetime(acct_in.entries(i).date, 'InputFormat', 'MM/dd/uuuu') >= val)
 					matches.entries = [matches.entries, acct_in.entries(i)]; %Add if date occurs on or before end date
 				end
 			end

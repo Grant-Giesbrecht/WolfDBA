@@ -115,9 +115,21 @@ function db_new=load_kv1bank(filename, database, account, save_header)
                 elseif(cline(3) == 's')
 					namecharar = char(words(2));
 					if (namecharar(end-2:end) == 'idg')
-						betemp.idgroups = strrep(words(3:end),'"','');
+						cells = strrep(words(3:end),'"','');
+						betemp.idgroups = [];
+						for c=1:length(cells)
+							if (cells{c} ~= "")
+								betemp.idgruops = [betemp.idgroups, cells{c}];
+							end
+						end
 					elseif (namecharar(end-3:end) == 'cats')
-						betemp.categories = strrep(words(3:end),'"','');
+						cells = strrep(words(3:end),'"','');
+						betemp.categories = [];
+						for c=1:length(cells)
+							if (cells{c} ~= "")
+								betemp.categories = [betemp.categories, cells{c}];
+							end
+						end
 					elseif (namecharar(end-1:end) == 'dd')
 						betemp.date = strrep(words(3),'"','');
 						betemp.memo = strrep(words(4),'"','');
